@@ -498,8 +498,8 @@ configure:5471: $? = 0
 configure:5471: result: yes
 configure:5477: checking for _doprnt
 configure:5477: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccNFBISx.o: In function `main':
-/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/conftest.c:67: undefined reference to `_doprnt'
+/tmp/cc7aO9qv.o: In function `main':
+/home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/conftest.c:67: undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:5477: $? = 1
 configure: failed program was:
@@ -603,8 +603,8 @@ configure:5789: gcc -o conftest -g -O2   conftest.c  >&5
 conftest.c:61:6: warning: conflicting types for built-in function 'floor'
  char floor ();
       ^
-/tmp/ccg8hHxN.o: In function `main':
-/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/conftest.c:72: undefined reference to `floor'
+/tmp/ccaajIyT.o: In function `main':
+/home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/conftest.c:72: undefined reference to `floor'
 collect2: error: ld returned 1 exit status
 configure:5789: $? = 1
 configure: failed program was:
@@ -693,8 +693,8 @@ configure:5789: gcc -o conftest -g -O2   conftest.c  >&5
 conftest.c:62:6: warning: conflicting types for built-in function 'sqrt'
  char sqrt ();
       ^
-/tmp/ccSvMjNQ.o: In function `main':
-/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/conftest.c:73: undefined reference to `sqrt'
+/tmp/cc2xixwY.o: In function `main':
+/home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/conftest.c:73: undefined reference to `sqrt'
 collect2: error: ld returned 1 exit status
 configure:5789: $? = 1
 configure: failed program was:
@@ -1114,164 +1114,17 @@ configure: failed program was:
 configure:9688: result: no
 configure:9725: checking GL/glc.h usability
 configure:9725: gcc -c -I/usr/include/libdrm -I/usr/include/libdrm -g -O2  conftest.c >&5
-conftest.c:87:20: fatal error: GL/glc.h: No such file or directory
-compilation terminated.
-configure:9725: $? = 1
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "Chromium B.S.U."
-| #define PACKAGE_TARNAME "chromium-bsu"
-| #define PACKAGE_VERSION "0.9.16.1"
-| #define PACKAGE_STRING "Chromium B.S.U. 0.9.16.1"
-| #define PACKAGE_BUGREPORT "https://sf.net/p/chromium-bsu/bugs"
-| #define PACKAGE_URL ""
-| #define PACKAGE "chromium-bsu"
-| #define VERSION "0.9.16.1"
-| #define STDC_HEADERS 1
-| #define HAVE_SYS_TYPES_H 1
-| #define HAVE_SYS_STAT_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_MEMORY_H 1
-| #define HAVE_STRINGS_H 1
-| #define HAVE_INTTYPES_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_FCNTL_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_LOCALE_H 1
-| #define HAVE_LIBINTL_H 1
-| #define HAVE__BOOL 1
-| #define HAVE_STDBOOL_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_MALLOC 1
-| #define LSTAT_FOLLOWS_SLASHED_SYMLINK 1
-| #define HAVE_VPRINTF 1
-| #define TIME_WITH_SYS_TIME 1
-| #define HAVE_SYS_TIME_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_ALARM 1
-| #define HAVE_ATEXIT 1
-| #define HAVE_SETENV 1
-| #define HAVE_STRCASECMP 1
-| #define HAVE_STRCHR 1
-| #define HAVE_STRERROR 1
-| #define HAVE_STRRCHR 1
-| #define HAVE_MEMSET 1
-| #define HAVE_SETLOCALE 1
-| #define HAVE_STRDUP 1
-| #define HAVE_TZSET 1
-| #define ENABLE_NLS 1
-| #define HAVE_GETTEXT 1
-| #define HAVE_DCGETTEXT 1
-| #define HAVE_GL_GL_H 1
-| #define HAVE_GL 1
-| #define HAVE_GL_GLU_H 1
-| #define HAVE_GLU 1
-| /* end confdefs.h.  */
-| #include <stdio.h>
-| #ifdef HAVE_SYS_TYPES_H
-| # include <sys/types.h>
-| #endif
-| #ifdef HAVE_SYS_STAT_H
-| # include <sys/stat.h>
-| #endif
-| #ifdef STDC_HEADERS
-| # include <stdlib.h>
-| # include <stddef.h>
-| #else
-| # ifdef HAVE_STDLIB_H
-| #  include <stdlib.h>
-| # endif
-| #endif
-| #ifdef HAVE_STRING_H
-| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
-| #  include <memory.h>
-| # endif
-| # include <string.h>
-| #endif
-| #ifdef HAVE_STRINGS_H
-| # include <strings.h>
-| #endif
-| #ifdef HAVE_INTTYPES_H
-| # include <inttypes.h>
-| #endif
-| #ifdef HAVE_STDINT_H
-| # include <stdint.h>
-| #endif
-| #ifdef HAVE_UNISTD_H
-| # include <unistd.h>
-| #endif
-| #include <GL/glc.h>
-configure:9725: result: no
+configure:9725: $? = 0
+configure:9725: result: yes
 configure:9725: checking GL/glc.h presence
 configure:9725: gcc -E  conftest.c
-conftest.c:54:20: fatal error: GL/glc.h: No such file or directory
-compilation terminated.
-configure:9725: $? = 1
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "Chromium B.S.U."
-| #define PACKAGE_TARNAME "chromium-bsu"
-| #define PACKAGE_VERSION "0.9.16.1"
-| #define PACKAGE_STRING "Chromium B.S.U. 0.9.16.1"
-| #define PACKAGE_BUGREPORT "https://sf.net/p/chromium-bsu/bugs"
-| #define PACKAGE_URL ""
-| #define PACKAGE "chromium-bsu"
-| #define VERSION "0.9.16.1"
-| #define STDC_HEADERS 1
-| #define HAVE_SYS_TYPES_H 1
-| #define HAVE_SYS_STAT_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_MEMORY_H 1
-| #define HAVE_STRINGS_H 1
-| #define HAVE_INTTYPES_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_FCNTL_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_LOCALE_H 1
-| #define HAVE_LIBINTL_H 1
-| #define HAVE__BOOL 1
-| #define HAVE_STDBOOL_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_MALLOC 1
-| #define LSTAT_FOLLOWS_SLASHED_SYMLINK 1
-| #define HAVE_VPRINTF 1
-| #define TIME_WITH_SYS_TIME 1
-| #define HAVE_SYS_TIME_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_ALARM 1
-| #define HAVE_ATEXIT 1
-| #define HAVE_SETENV 1
-| #define HAVE_STRCASECMP 1
-| #define HAVE_STRCHR 1
-| #define HAVE_STRERROR 1
-| #define HAVE_STRRCHR 1
-| #define HAVE_MEMSET 1
-| #define HAVE_SETLOCALE 1
-| #define HAVE_STRDUP 1
-| #define HAVE_TZSET 1
-| #define ENABLE_NLS 1
-| #define HAVE_GETTEXT 1
-| #define HAVE_DCGETTEXT 1
-| #define HAVE_GL_GL_H 1
-| #define HAVE_GL 1
-| #define HAVE_GL_GLU_H 1
-| #define HAVE_GLU 1
-| /* end confdefs.h.  */
-| #include <GL/glc.h>
-configure:9725: result: no
+configure:9725: $? = 0
+configure:9725: result: yes
 configure:9725: checking for GL/glc.h
-configure:9725: result: no
+configure:9725: result: yes
 configure:9739: checking QuesoGLC/glc.h usability
 configure:9739: gcc -c -I/usr/include/libdrm -I/usr/include/libdrm -g -O2  conftest.c >&5
-conftest.c:87:26: fatal error: QuesoGLC/glc.h: No such file or directory
+conftest.c:88:26: fatal error: QuesoGLC/glc.h: No such file or directory
 compilation terminated.
 configure:9739: $? = 1
 configure: failed program was:
@@ -1327,6 +1180,7 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | /* end confdefs.h.  */
 | #include <stdio.h>
 | #ifdef HAVE_SYS_TYPES_H
@@ -1365,7 +1219,7 @@ configure: failed program was:
 configure:9739: result: no
 configure:9739: checking QuesoGLC/glc.h presence
 configure:9739: gcc -E  conftest.c
-conftest.c:54:26: fatal error: QuesoGLC/glc.h: No such file or directory
+conftest.c:55:26: fatal error: QuesoGLC/glc.h: No such file or directory
 compilation terminated.
 configure:9739: $? = 1
 configure: failed program was:
@@ -1421,6 +1275,7 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | /* end confdefs.h.  */
 | #include <QuesoGLC/glc.h>
 configure:9739: result: no
@@ -1428,79 +1283,8 @@ configure:9739: checking for QuesoGLC/glc.h
 configure:9739: result: no
 configure:9751: checking for glcGenContext in -lGLC
 configure:9776: gcc -o conftest -I/usr/include/libdrm -I/usr/include/libdrm -g -O2   conftest.c -lGLC  -lGLU -lGL -lGL  >&5
-/usr/bin/ld: cannot find -lGLC
-collect2: error: ld returned 1 exit status
-configure:9776: $? = 1
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "Chromium B.S.U."
-| #define PACKAGE_TARNAME "chromium-bsu"
-| #define PACKAGE_VERSION "0.9.16.1"
-| #define PACKAGE_STRING "Chromium B.S.U. 0.9.16.1"
-| #define PACKAGE_BUGREPORT "https://sf.net/p/chromium-bsu/bugs"
-| #define PACKAGE_URL ""
-| #define PACKAGE "chromium-bsu"
-| #define VERSION "0.9.16.1"
-| #define STDC_HEADERS 1
-| #define HAVE_SYS_TYPES_H 1
-| #define HAVE_SYS_STAT_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_MEMORY_H 1
-| #define HAVE_STRINGS_H 1
-| #define HAVE_INTTYPES_H 1
-| #define HAVE_STDINT_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_FCNTL_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_STRING_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_LOCALE_H 1
-| #define HAVE_LIBINTL_H 1
-| #define HAVE__BOOL 1
-| #define HAVE_STDBOOL_H 1
-| #define HAVE_STDLIB_H 1
-| #define HAVE_MALLOC 1
-| #define LSTAT_FOLLOWS_SLASHED_SYMLINK 1
-| #define HAVE_VPRINTF 1
-| #define TIME_WITH_SYS_TIME 1
-| #define HAVE_SYS_TIME_H 1
-| #define HAVE_UNISTD_H 1
-| #define HAVE_ALARM 1
-| #define HAVE_ATEXIT 1
-| #define HAVE_SETENV 1
-| #define HAVE_STRCASECMP 1
-| #define HAVE_STRCHR 1
-| #define HAVE_STRERROR 1
-| #define HAVE_STRRCHR 1
-| #define HAVE_MEMSET 1
-| #define HAVE_SETLOCALE 1
-| #define HAVE_STRDUP 1
-| #define HAVE_TZSET 1
-| #define ENABLE_NLS 1
-| #define HAVE_GETTEXT 1
-| #define HAVE_DCGETTEXT 1
-| #define HAVE_GL_GL_H 1
-| #define HAVE_GL 1
-| #define HAVE_GL_GLU_H 1
-| #define HAVE_GLU 1
-| /* end confdefs.h.  */
-| 
-| /* Override any GCC internal prototype to avoid an error.
-|    Use char because int might match the return type of a GCC
-|    builtin and then its argument prototype would still apply.  */
-| #ifdef __cplusplus
-| extern "C"
-| #endif
-| char glcGenContext ();
-| int
-| main ()
-| {
-| return glcGenContext ();
-|   ;
-|   return 0;
-| }
-configure:9785: result: no
+configure:9776: $? = 0
+configure:9785: result: yes
 configure:9793: checking for glcGenContext in -lglc32
 configure:9818: gcc -o conftest -I/usr/include/libdrm -I/usr/include/libdrm -g -O2   conftest.c -lglc32  -lGLU -lGL -lGL  >&5
 /usr/bin/ld: cannot find -lglc32
@@ -1559,6 +1343,7 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | /* end confdefs.h.  */
 | 
 | /* Override any GCC internal prototype to avoid an error.
@@ -1602,8 +1387,8 @@ configure:10127: $? = 0
 configure:10165: result: yes
 configure:10315: checking for library containing glutMainLoop
 configure:10346: gcc -o conftest  -I/usr/include/libdrm -I/usr/include/libdrm -g -O2   conftest.c  -lGLU -lGL -lGL  >&5
-/tmp/cccp8g7b.o: In function `main':
-/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/conftest.c:65: undefined reference to `glutMainLoop'
+/tmp/ccpO5NcJ.o: In function `main':
+/home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/conftest.c:66: undefined reference to `glutMainLoop'
 collect2: error: ld returned 1 exit status
 configure:10346: $? = 1
 configure: failed program was:
@@ -1659,6 +1444,7 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | /* end confdefs.h.  */
 | 
 | /* Override any GCC internal prototype to avoid an error.
@@ -1771,7 +1557,7 @@ configure:11165: checking for GL/glpng.h
 configure:11165: result: yes
 configure:11179: checking glpng/glpng.h usability
 configure:11179: gcc -c -I/usr/include/libdrm -I/usr/include/libdrm -g -O2  conftest.c >&5
-conftest.c:90:25: fatal error: glpng/glpng.h: No such file or directory
+conftest.c:91:25: fatal error: glpng/glpng.h: No such file or directory
 compilation terminated.
 configure:11179: $? = 1
 configure: failed program was:
@@ -1827,6 +1613,7 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
@@ -1868,7 +1655,7 @@ configure: failed program was:
 configure:11179: result: no
 configure:11179: checking glpng/glpng.h presence
 configure:11179: gcc -E  conftest.c
-conftest.c:57:25: fatal error: glpng/glpng.h: No such file or directory
+conftest.c:58:25: fatal error: glpng/glpng.h: No such file or directory
 compilation terminated.
 configure:11179: $? = 1
 configure: failed program was:
@@ -1924,6 +1711,7 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
@@ -1990,6 +1778,7 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
@@ -2068,11 +1857,11 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
-| #define TEXT_FTGL 1
-| #define HAVE_FONTCONFIG 1
+| #define TEXT_GLC 1
 | #define USE_SDL 1
 | #define AUDIO_OPENAL 1
 | /* end confdefs.h.  */
@@ -2169,11 +1958,11 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
-| #define TEXT_FTGL 1
-| #define HAVE_FONTCONFIG 1
+| #define TEXT_GLC 1
 | #define USE_SDL 1
 | #define AUDIO_OPENAL 1
 | /* end confdefs.h.  */
@@ -2239,11 +2028,11 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
-| #define TEXT_FTGL 1
-| #define HAVE_FONTCONFIG 1
+| #define TEXT_GLC 1
 | #define USE_SDL 1
 | #define AUDIO_OPENAL 1
 | /* end confdefs.h.  */
@@ -2340,11 +2129,11 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
-| #define TEXT_FTGL 1
-| #define HAVE_FONTCONFIG 1
+| #define TEXT_GLC 1
 | #define USE_SDL 1
 | #define AUDIO_OPENAL 1
 | /* end confdefs.h.  */
@@ -2410,11 +2199,11 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
-| #define TEXT_FTGL 1
-| #define HAVE_FONTCONFIG 1
+| #define TEXT_GLC 1
 | #define USE_SDL 1
 | #define AUDIO_OPENAL 1
 | /* end confdefs.h.  */
@@ -2511,11 +2300,11 @@ configure: failed program was:
 | #define HAVE_GL 1
 | #define HAVE_GL_GLU_H 1
 | #define HAVE_GLU 1
+| #define HAVE_GL_GLC_H 1
 | #define HAVE_GL_GLUT_H 1
 | #define HAVE_GLUT 1
 | #define HAVE_GL_GLPNG_H 1
-| #define TEXT_FTGL 1
-| #define HAVE_FONTCONFIG 1
+| #define TEXT_GLC 1
 | #define USE_SDL 1
 | #define AUDIO_OPENAL 1
 | /* end confdefs.h.  */
@@ -2670,7 +2459,7 @@ ac_cv_header_AL_al_h=yes
 ac_cv_header_AL_alc_h=yes
 ac_cv_header_AL_alut_h=yes
 ac_cv_header_GL_gl_h=yes
-ac_cv_header_GL_glc_h=no
+ac_cv_header_GL_glc_h=yes
 ac_cv_header_GL_glpng_h=yes
 ac_cv_header_GL_glu_h=yes
 ac_cv_header_GL_glut_h=yes
@@ -2695,7 +2484,7 @@ ac_cv_header_sys_types_h=yes
 ac_cv_header_time=yes
 ac_cv_header_unistd_h=yes
 ac_cv_host=x86_64-pc-linux-gnu
-ac_cv_lib_GLC_glcGenContext=no
+ac_cv_lib_GLC_glcGenContext=yes
 ac_cv_lib_glc32_glcGenContext=no
 ac_cv_lib_glpng_pngBind=no
 ac_cv_objext=o
@@ -2769,7 +2558,7 @@ pkg_cv_SDL_LIBS=-lSDL
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} "/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/missing" aclocal-1.15'
+ACLOCAL='${SHELL} /home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/missing aclocal-1.15'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -2780,9 +2569,9 @@ AM_DEFAULT_VERBOSITY='1'
 AM_V='$(V)'
 AUDIO_CFLAGS='-I/usr/include/AL -I/usr/include/AL'
 AUDIO_LIBS='-lopenal -lalut -lopenal'
-AUTOCONF='${SHELL} "/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/missing" autoconf'
-AUTOHEADER='${SHELL} "/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/missing" autoheader'
-AUTOMAKE='${SHELL} "/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/missing" automake-1.15'
+AUTOCONF='${SHELL} /home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/missing autoconf'
+AUTOHEADER='${SHELL} /home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/missing autoheader'
+AUTOMAKE='${SHELL} /home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/missing automake-1.15'
 AWK='gawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -2832,7 +2621,7 @@ LIBS='-lGLU -lGL -lGL '
 LTLIBICONV='-liconv'
 LTLIBINTL=''
 LTLIBOBJS=''
-MAKEINFO='${SHELL} "/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/missing" makeinfo'
+MAKEINFO='${SHELL} /home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/missing makeinfo'
 MKDIR_P='/bin/mkdir -p'
 MSGFMT='/usr/bin/msgfmt'
 MSGFMT_015='/usr/bin/msgfmt'
@@ -2867,8 +2656,8 @@ SDL_LIBS='-lSDL'
 SET_MAKE=''
 SHELL='/bin/bash'
 STRIP=''
-TEXT_CFLAGS='-I/usr/include/FTGL -I/usr/include/freetype2 -I/usr/include/freetype2'
-TEXT_LIBS='-lftgl -lfontconfig -lfreetype'
+TEXT_CFLAGS=''
+TEXT_LIBS='-lGLC'
 USE_NLS='yes'
 VERSION='0.9.16.1'
 WINDOW_CFLAGS='-D_REENTRANT -I/usr/include/SDL2'
@@ -2910,7 +2699,7 @@ host_vendor='pc'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} '\''/home/rafal/Pulpit/qt Chromium BSU/chromium-bsu-0.9.16.1/install-sh'\'''
+install_sh='${SHELL} /home/rafal/Pulpit/WorkingRepos/GIT_HUB/QtChromiumBSU/chromium-bsu-0.9.16.1/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
@@ -2984,11 +2773,11 @@ target_alias=''
 #define HAVE_GL 1
 #define HAVE_GL_GLU_H 1
 #define HAVE_GLU 1
+#define HAVE_GL_GLC_H 1
 #define HAVE_GL_GLUT_H 1
 #define HAVE_GLUT 1
 #define HAVE_GL_GLPNG_H 1
-#define TEXT_FTGL 1
-#define HAVE_FONTCONFIG 1
+#define TEXT_GLC 1
 #define USE_SDL 1
 #define AUDIO_OPENAL 1
 #define HAVE_AL_AL_H 1

@@ -23,6 +23,8 @@
 #include <fontconfig/fontconfig.h>
 #endif
 
+#include <iostream>
+
 using namespace std;
 
 //====================================================================
@@ -79,6 +81,8 @@ const char* TextFTGL::findFont()
         if( !font && path && 0 == stat(path, &statbuf) ) \
             font = strdup(path); \
     }
+
+    cout << "CHROMIUM_BSU_FONT=" << getenv("CHROMIUM_BSU_FONT") << endl;
 
     // Get user-specified font path
     CHECK_FONT_PATH(getenv("CHROMIUM_BSU_FONT"))
