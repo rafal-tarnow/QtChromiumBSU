@@ -76,8 +76,8 @@ HeroAircraft::~HeroAircraft()
 //----------------------------------------------------------
 void HeroAircraft::loadTextures()
 {
-    heroTex = Image::load(dataLoc("png/hero.png"));
-    bombTex = Image::load(dataLoc("png/superBomb.png"));
+    heroTex = Image::load(/*dataLoc("png/hero.png")*/ "./data/png/hero.png");
+    bombTex = Image::load(/*dataLoc("png/superBomb.png")*/ "./data/png/superBomb.png");
 }
 
 //----------------------------------------------------------

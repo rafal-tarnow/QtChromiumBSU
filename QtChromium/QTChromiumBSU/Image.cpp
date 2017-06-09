@@ -49,6 +49,8 @@ GLuint Image::load(const char *filename, ImageMipMap mipmap, ImageBlend trans, G
 
 #if IMAGE_SDL
 
+    //IMG_Init(IMG_INIT_PNG);
+
     SDL_Surface *image = IMG_Load(filename);
     if (!image)
     {

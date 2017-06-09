@@ -4,13 +4,15 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 
-INSTALLS += documentation
-documentation.path =  $$OUT_PWD
-documentation.files = data/doc/*
+copydata.commands = $(COPY_DIR) -r $$PWD/data $$OUT_PWD
+first.depends = $(first) copydata
+export(first.depends)
+export(copydata.commands)
+QMAKE_EXTRA_TARGETS += first copydata
 
 
 
-#DEFINES += IMAGE_GLPNG
+DEFINES += IMAGE_GLPNG
 
 DEFINES += TEXT_FTGL
 
@@ -21,8 +23,10 @@ DEFINES += "USE_GLUT"
 DEFINES += "PACKAGE_STRING=\\\"Chromium\\ B.S.U.\\ 0.9.16.1\\\""
 DEFINES += "PACKAGE=\\\"chromium-bsu\\\""
 
+
 INCLUDEPATH += /usr/include/freetype2
 INCLUDEPATH += /usr/local/include/GL/
+INCLUDEPATH += /usr/include/SDL
 
 SOURCES += main.cpp \
     Config.cpp \
@@ -111,6 +115,9 @@ LIBS += -lglut
 LIBS += -lGLU
 LIBS += -lftgl
 LIBS += -lGLC
+LIBS += -lglpng
+LIBS += -lSDL2
+
 
 
 DISTFILES += \

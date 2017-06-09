@@ -161,11 +161,11 @@ Explosions::~Explosions()
 //----------------------------------------------------------
 void	Explosions::loadTextures()
 {
-    tex[EnemyDestroyed]	= Image::load(dataLoc("png/enemyExplo.png"), IMG_NOMIPMAPS, IMG_ALPHA, GL_CLAMP, GL_NEAREST, GL_LINEAR);
+    tex[EnemyDestroyed]	= Image::load(/*dataLoc("png/enemyExplo.png")*/ "./data/png/enemyExplo.png", IMG_NOMIPMAPS, IMG_ALPHA, GL_CLAMP, GL_NEAREST, GL_LINEAR);
     tex[EnemyDamage]	= tex[EnemyDestroyed];
-    tex[EnemyAmmo00]	= Image::load(dataLoc("png/enemyAmmoExplo00.png"));
-    tex[EnemyAmmo01]	= Image::load(dataLoc("png/enemyAmmoExplo01.png"), IMG_NOMIPMAPS, IMG_ALPHA, GL_CLAMP, GL_NEAREST, GL_LINEAR);
-    tex[EnemyAmmo02]	= Image::load(dataLoc("png/enemyAmmoExplo02.png"));
+    tex[EnemyAmmo00]	= Image::load(/*dataLoc("png/enemyAmmoExplo00.png")*/ "./data/png/enemyAmmoExplo00.png");
+    tex[EnemyAmmo01]	= Image::load(/*dataLoc("png/enemyAmmoExplo01.png")*/ "./data/png/enemyAmmoExplo01.png", IMG_NOMIPMAPS, IMG_ALPHA, GL_CLAMP, GL_NEAREST, GL_LINEAR);
+    tex[EnemyAmmo02]	= Image::load(/*dataLoc("png/enemyAmmoExplo02.png")*/ "./data/png/enemyAmmoExplo02.png");
     tex[EnemyAmmo03]	= Image::load(dataLoc("png/enemyAmmoExplo03.png"));
     tex[EnemyAmmo04]	= Image::load(dataLoc("png/enemyAmmoExplo04.png"));
     tex[HeroDestroyed]	= Image::load(dataLoc("png/enemyExplo.png"), IMG_NOMIPMAPS, IMG_ALPHA, GL_CLAMP, GL_NEAREST, GL_LINEAR);
